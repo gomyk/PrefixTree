@@ -115,7 +115,7 @@ int calcTree(TreeNode* node) {
 			return calcTree(node->left)- calcTree(node->right);
 		case -3:
 			return calcTree(node->left)/ calcTree(node->right);
-		default:	//if content is integer -> return integer
+		default:	//if content is positive integer -> return integer
 			return node->content;
 		}
 	
